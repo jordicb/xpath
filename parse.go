@@ -660,7 +660,7 @@ func (s *scanner) nextItem() bool {
 	case 0:
 		s.typ = itemEOF
 		return false
-	case ',', '@', '(', ')', '|', '*', '[', ']', '+', '-', '=', '#', '$':
+	case ',', '@', '(', ')', '|', '[', ']', '+', '-', '=', '#', '$':
 		s.typ = asItemType(s.curr)
 		s.nextChar()
 	case '<':
